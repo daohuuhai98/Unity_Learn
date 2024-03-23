@@ -1,14 +1,15 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 public class AnimUIMove : MonoBehaviour
 {
-    [SerializeField] Vector2 posFrom;
+    [SerializeField] Vector2 posFrom; // vector2 kiiểu 
     [SerializeField] Vector2 posTo;
     [SerializeField] float timeMove;
     [SerializeField] Ease ease;
-    RectTransform rect;
+    public RectTransform rect;
+
     private void Awake()
     {
         rect = GetComponent<RectTransform>();
