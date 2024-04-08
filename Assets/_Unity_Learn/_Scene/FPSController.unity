@@ -1908,6 +1908,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1608071681}
   speed: 12
+  walkSpeed: 9
+  runSpeed: 18
+  crouchSpeed: 6
   gravity: -24
   jumpHeight: 2
   groundCheck: {fileID: 437807486}
@@ -1934,7 +1937,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 3
+  m_Height: 2.5
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.7
