@@ -9,8 +9,10 @@ public class DataCharatcer : ScriptableObject
 [System.Serializable]
 public class Character
 {
+    public int idChar;
     public string name;
     public Sprite icon;
     public float exp;
     public int level;
+    public List<int> idStone;
 }
