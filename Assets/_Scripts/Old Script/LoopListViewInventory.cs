@@ -4,8 +4,11 @@ using TMPro;
 public class LoopListViewInventory : MonoBehaviour
 {
     public DataCharacter dataCharacter;
-    public GameObject characterCardPrefab;
     public GameObject card;
+    public GameObject characterCardPrefab;
+    public GameObject listInventoryPrefab;
+    public GameObject content;
+
 
     private void Start()
     {
@@ -30,11 +33,10 @@ public class LoopListViewInventory : MonoBehaviour
                 }
             }
 
-                GameObject newCharacterCard = Instantiate(characterCardPrefab);
-                newCharacterCard.SetActive(true);
-                var script = newCharacterCard.GetComponent<OldCharacterItem>();
-                script.OldSetItemData(characterData);     
-                     
-             
+        GameObject newCharacterCard = Instantiate(characterCardPrefab);
+        newCharacterCard.SetActive(true);
+        var script = newCharacterCard.GetComponent<OldCharacterItem>();
+        script.OldSetItemData(characterData);
+               
     }
 }
