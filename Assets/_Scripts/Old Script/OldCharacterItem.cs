@@ -4,13 +4,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterItem : MonoBehaviour
+public class OldCharacterItem : MonoBehaviour
 {
     public Image IconCharacter;
     public TextMeshProUGUI NameCharacter;
     public TextMeshProUGUI Level;
     private Character data;
-    public void SetItemData(Character _data)
+
+    public void OldSetItemData(Character _data)
     {
         data = _data;
         NameCharacter.text = data.name;

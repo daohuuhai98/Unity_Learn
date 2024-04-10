@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c696b7055935e854bb601e1d304929e7, type: 3}
+  m_Name: DataItem
+  m_EditorClassIdentifier: 
+  listItem:
+  - name: Red Gem
+    ID: 0
+    icon: {fileID: 21300000, guid: eca87834fb7f948818f465338bd28cf6, type: 3}
+  - name: Green Gem
+    ID: 1
+    icon: {fileID: 21300000, guid: 46d844139b3f04e9d8628d11250d2d3c, type: 3}
+  - name: Purple Gem
+    ID: 2
+    icon: {fileID: 21300000, guid: b5883c7c841594f67a7b8aedcf8a1389, type: 3}
+  - name: Yellow Gem
+    ID: 3
+    icon: {fileID: 21300000, guid: 54f0ca206a538418882dd80ba6202648, type: 3}
+  - name: Blue Gem
+    ID: 4
+    icon: {fileID: 21300000, guid: 2be1d8c1263eb4eaa870f17457f8a4b9, type: 3}
+  - name: Gray Gem
+    ID: 5
+    icon: {fileID: 21300000, guid: 45afb3738940b4f5aa2306b6750cfba6, type: 3}
+  - name: Cup
+    ID: 6
+    icon: {fileID: 21300000, guid: 2be1db0e0481c47b8b503309e54ef0f3, type: 3}
+  - name: Crown
+    ID: 7
+    icon: {fileID: 21300000, guid: fa074f8ff39c74440af662c1c8968a9d, type: 3}
