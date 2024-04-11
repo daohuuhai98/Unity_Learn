@@ -15,15 +15,16 @@ public class LoopListViewInventory : MonoBehaviour
     {
         characterCardPrefab.SetActive(false);
         listInventoryPrefab.SetActive(false);
-        OnShow();
+        //OnShow();
     }
-    public void OnShow()
+    public void OnShow(string nameChar)
     {
         // Kiểm tra xem đã có character name từ card chưa
         TextMeshProUGUI textComponent = card.GetComponentInChildren<TextMeshProUGUI>();
+        Debug.LogError("Textcomp");
         if (textComponent != null)
         {
-            string characterName = textComponent.text;
+             textComponent.text = nameChar;
 
             // Tìm kiếm thông tin character từ dataCharacter
             Character characterData = null;

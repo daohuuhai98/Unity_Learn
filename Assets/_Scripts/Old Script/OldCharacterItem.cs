@@ -10,6 +10,7 @@ public class OldCharacterItem : MonoBehaviour
     public TextMeshProUGUI NameCharacter;
     public TextMeshProUGUI Level;
     private Character data;
+    public LoopListViewInventory Inventory;
 
     public void OldSetItemData(Character _data)
     {
@@ -18,4 +19,10 @@ public class OldCharacterItem : MonoBehaviour
         IconCharacter.sprite = data.icon;
         Level.text = data.level.ToString();
     }
+
+    public void OnClick()
+    {
+        string nameChar = NameCharacter.text;
+        Inventory.OnShow(nameChar);
+    }    
 }
