@@ -13,15 +13,21 @@ MonoBehaviour:
   m_Name: DataCharatcer
   m_EditorClassIdentifier: 
   listCharacter:
-  - name: bard
+  - idChar: 1
+    name: bard
     icon: {fileID: 21300000, guid: 570d4d98fb522499bb37d3e66815a325, type: 3}
     exp: 0
     level: 2
-  - name: archer
+    idStone: 01000000010000000200000002000000030000000300000003000000
+  - idChar: 2
+    name: archer
     icon: {fileID: 21300000, guid: b3eea32e56c034e73a8f2aeb84e0462e, type: 3}
     exp: 0
     level: 4
-  - name: witch
+    idStone: 
+  - idChar: 3
+    name: witch
     icon: {fileID: 21300000, guid: 9f35db904975f48b9b6673de8a13d323, type: 3}
     exp: 0
     level: 5
+    idStone: 
