@@ -13,25 +13,7 @@ public class Character
     public Sprite icon;
     public float exp;
     public int level;
-    public List<InventoryItem> listInventoryItem;
-    public Dictionary<int, int> GetUniqueInventoryItems()
-    {
-        Dictionary<int, int> uniqueItems = new Dictionary<int, int>();
-
-        foreach (var item in listInventoryItem)
-        {
-            if (uniqueItems.ContainsKey(item.itemID))
-            {
-                uniqueItems[item.itemID] += item.itemAmount;
-            }
-            else
-            {
-                uniqueItems.Add(item.itemID, item.itemAmount);
-            }
-        }
-
-        return uniqueItems;
-    }
+    public List<InventoryItem> listInventoryItem;    
 }
 [System.Serializable]
 public class InventoryItem
