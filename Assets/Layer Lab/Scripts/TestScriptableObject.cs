@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class CharacterData : ScriptableObject
 {
-    public List<Character> ListCharacter;
+    public List<Character1> ListCharacter;
 }
 
 [System.Serializable]
 
-public class Character
+public class Character1
 {
     public string name;
     public Sprite icon;

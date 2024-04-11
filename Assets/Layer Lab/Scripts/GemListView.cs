@@ -54,7 +54,7 @@ public class GemListView : MonoBehaviour
                 }
 
                 var charscript = GetComponent<CharacterView>();
-                charscript.SetItemData(item);
+                //charscript.SetItemData(item);
             }                 
         }
     }

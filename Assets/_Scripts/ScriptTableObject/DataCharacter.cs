@@ -4,10 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DataCharatcer", menuName = "ScriptableObjects/DataCharatcer", order = 1)]
 public class DataCharatcer : ScriptableObject
 {
-    public List<Character1> listCharacter;
+    public List<Character> listCharacter;
 }
 [System.Serializable]
-public class Character1
+public class Character
 {
     public int idChar;
     public string name;

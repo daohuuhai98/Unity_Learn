@@ -34,7 +34,7 @@ public class CharacterListView : MonoBehaviour
             go.transform.localScale = Vector3.one;
             go.SetActive(true);
             var script = go.GetComponent<CharacterView>();
-            script.SetItemData(item);
+            //script.SetItemData(item);
         }
     }
 
