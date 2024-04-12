@@ -24,5 +24,6 @@ public class OldCharacterItem : MonoBehaviour
     {
         string nameChar = NameCharacter.text;
         Inventory.OnShow(nameChar);
+
     }    
 }
