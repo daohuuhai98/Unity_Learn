@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb0e870ed6e5034a8b7c7a2f96f8d16, type: 3}
+  m_Name: DataItemInventory
+  m_EditorClassIdentifier: 
+  listItems:
+  - id: 0
+    name: Wheels
+    quantity: 1
+    rarity: 0
+    ItemType: 2
+  - id: 1
+    name: sword
+    quantity: 1
+    rarity: 0
+    ItemType: 0
+  - id: 2
+    name: energy
+    quantity: 1
+    rarity: 1
+    ItemType: 3
+  - id: 3
+    name: cup
+    quantity: 1
+    rarity: 2
+    ItemType: 2
+  - id: 4
+    name: arrow
+    quantity: 1
+    rarity: 3
+    ItemType: 2
+  - id: 5
+    name: map
+    quantity: 1
+    rarity: 3
+    ItemType: 2
+  - id: 6
+    name: shields
+    quantity: 1
+    rarity: 3
+    ItemType: 1
