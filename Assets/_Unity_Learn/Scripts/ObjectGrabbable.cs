@@ -15,8 +15,27 @@ public class ObjectGrabbable : MonoBehaviour
     {
         objectGrabPointTransform = _objectPoint;
         objectRigibody.useGravity = false;
+        objectRigibody.isKinematic = true;
     }
 
+    public void Drop()
+    {
+        objectGrabPointTransform = null;
+        objectRigibody.useGravity = true;
+        objectRigibody.isKinematic = false;
+    }
+
+    public void RotateXaxis()
+    {
+        //RectTransform Objtransform = this.GetComponent<RectTransform>();
+        this.transform.Rotate(Vector3.up * 2);
+    }
+
+    public void RotateYaxis()
+    {
+        //RectTransform Objtransform = this.GetComponent<RectTransform>();
+        this.transform.Rotate(Vector3.right * 2);
+    }
 
     private void FixedUpdate()
     {
