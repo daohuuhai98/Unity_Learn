@@ -19,7 +19,7 @@ public class ObjectItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            core.Additem(item);
+            //core.Additem(item);
         }
     }
 }

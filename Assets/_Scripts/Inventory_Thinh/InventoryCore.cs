@@ -7,9 +7,9 @@ public class InventoryCore : MonoBehaviour
     // Start is called before the first frame update
     public static InventoryCore Instance { get; private set; }
 
-    public List<Iteminv> items = new List<Iteminv>();
+    //public List<Iteminv> items = new List<Iteminv>();
 
-    public List<Iteminv> ListItems => items;
+    //public List<Iteminv> ListItems => items;
 
     private void Awake()
     {
@@ -23,11 +23,6 @@ public class InventoryCore : MonoBehaviour
         {
             Instance = this;
         }
-    }
-
-    public void Additem(Iteminv item)
-    {
-        items.Add(item);
     }
 
 }
