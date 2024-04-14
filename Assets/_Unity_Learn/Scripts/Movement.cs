@@ -12,10 +12,9 @@ public class Movement : MonoBehaviour
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+    public LayerMask groundMask; 
 
 
-    private float run = 1f;
     Vector3 velocity;
     bool isGrounded;
     void Update()
@@ -29,13 +28,7 @@ public class Movement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            run = 3f;
-        }
-        else run = 1f;
-
-        Vector3 move = transform.right * x + transform.forward * z * run;
+        Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
 
 

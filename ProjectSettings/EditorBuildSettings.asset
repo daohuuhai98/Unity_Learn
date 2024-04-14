@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Layer Lab/GUI-CasualFantasy/Scene/CharacterList.unity
-    guid: 2c7df76e7852926408fb032cff6d23c2
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

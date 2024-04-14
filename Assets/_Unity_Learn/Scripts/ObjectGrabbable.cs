@@ -5,8 +5,10 @@ using UnityEngine;
 public class ObjectGrabbable : MonoBehaviour
 {
     public Transform objectGrabPointTransform;
+    public int idItem;
 
     private Rigidbody objectRigibody;
+
     private void Awake()
     {
         objectRigibody = gameObject.GetComponent<Rigidbody>();
@@ -20,23 +22,15 @@ public class ObjectGrabbable : MonoBehaviour
 
     public void Drop()
     {
-        objectGrabPointTransform = null;
+        this.objectGrabPointTransform = null;
         objectRigibody.useGravity = true;
         objectRigibody.isKinematic = false;
     }
 
-    public void RotateXaxis()
+    public void OnDetroys()
     {
-        //RectTransform Objtransform = this.GetComponent<RectTransform>();
-        this.transform.Rotate(Vector3.up * 2);
+        Destroy(this.gameObject);
     }
-
-    public void RotateYaxis()
-    {
-        //RectTransform Objtransform = this.GetComponent<RectTransform>();
-        this.transform.Rotate(Vector3.right * 2);
-    }
-
     private void FixedUpdate()
     {
         if(objectGrabPointTransform != null)
@@ -45,5 +39,9 @@ public class ObjectGrabbable : MonoBehaviour
             Vector3 newPosition = Vector3.Lerp(transform.position, objectGrabPointTransform.position, Time.deltaTime * lerpSpeed);
             objectRigibody.MovePosition(newPosition);
         }
+
+
     }
+
+
 }
