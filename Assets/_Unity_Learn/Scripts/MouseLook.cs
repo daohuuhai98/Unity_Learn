@@ -7,23 +7,26 @@ public class MouseLook : MonoBehaviour
     public float mouseSensitivity = 80f;
 
     public Transform mainPlayer;
+    bool IsOpenInventory;
     float xRotation = 0f;
     void Start()
     {
+        IsOpenInventory = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        if (!IsOpenInventory)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        mainPlayer.Rotate(Vector3.up * mouseX);
-        
-
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            mainPlayer.Rotate(Vector3.up * mouseX);
+        }
     }
 }

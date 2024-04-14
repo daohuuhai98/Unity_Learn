@@ -31,4 +31,5 @@ public class PopupManager : MonoBehaviour
                 popup.SetActive(false);
             });
     }
+
 }
