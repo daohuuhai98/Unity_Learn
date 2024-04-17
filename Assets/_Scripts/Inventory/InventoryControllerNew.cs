@@ -8,7 +8,7 @@ public class InventoryControllerNew : MonoBehaviour
     public DataInventory dataInventory;
     public GameObject inventorySlotPrefab;
     public Transform inventoryContent;
-    public Text categoryText;
+    public Text categoryText = "All";
 
     private ItemCategory currentCategory = ItemCategory.All; // Default category
 

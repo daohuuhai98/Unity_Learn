@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listInventory:
   - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
-  - idItem: 0
-    qtyItem: 0
+    qtyItem: 1
+  - idItem: 1
+    qtyItem: 2
+  - idItem: 2
+    qtyItem: 3
+  - idItem: 3
+    qtyItem: 4
+  - idItem: 4
+    qtyItem: 5
+  - idItem: 5
+    qtyItem: 6
+  - idItem: 6
+    qtyItem: 7
